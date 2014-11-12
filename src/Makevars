@@ -1,0 +1,2 @@
+PKG_CPPFLAGS=  -DNOPROGRESS
+PKG_LIBS=-lfftw3   -lfftw3

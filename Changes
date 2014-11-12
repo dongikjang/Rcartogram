@@ -1,0 +1,27 @@
+Version 0.2-2
+
+   *   Updates to the configuration script for the case where we are not using pkg-config but
+       looking for fftw3.h and libfftw3.so more directly.
+
+Version 0.2-1     
+
+   *   Cleaned up the demo/synthetic.R to get the X and Y oriented correctly in the plots.
+
+Version 0.2-0     
+
+   *   Changed the default value for sea in addBoundary() to 2, consistent with the 
+       Gastner and Newman paper.  This makes the computational effort greater but should
+       give better results.
+
+Version 0.2-0     Nov 9, 2008
+
+   *  demo(synthetic) for artificial data with 5 regions.
+
+   *  Enhanced configuration script that looks in more places for fftw3 and fails
+      more aggressively when it can't find the files.  One can use --with-fftw3 to 
+      specify the fully-qualified name of a directory in which the fftw3 distribution
+      has been installed, e.g. $HOME/local and where include/ and lib/ are located, or 
+      the name of the directory in which fftw3 was compiled and built.
+
+   *  Added a method for transform() which is merely a call to predict().
+
